@@ -2,8 +2,8 @@
 
 /* mobile fist */
 .hero {
-	width: 100%;
-	height: 35vh;
+	width: 100vw;
+	height: 100vh;
 	color: #fff;
 	position: relative;
 	transition: 1s;
@@ -18,19 +18,19 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: url("../assets/mini-hero.jpg");
+	background-image: url("../assets/mini-hero-small.jpg");
 	background-position: center;
 	background-size: cover;
 	filter: grayscale();
 }
 
 .hero-content {
-	width: 50vw;
+	width: 100%;
 	position: absolute;
-	top: 20px;
-	left: 30px;
+	bottom: 20px;
 	display: flex;
 	flex-direction: column;
+    align-items: center;
 	gap: 15px;
 	z-index: 2;
 }
@@ -38,7 +38,8 @@
 .hero-title {
 	font-family: "Roboto Slab", serif;
 	font-size: 1.5rem;
-	font-weight: 300;
+	font-weight: 500;
+    text-align: center;
 }
 
 .hero-description {
@@ -46,16 +47,17 @@
 }
 
 .hero-cta {
-	padding: 10px 20px;
-	background-color: rgba(255, 136, 0, 0.9);
+	padding: 15px 25px;
+	background-color: var(--secondary-color);
 	border-radius: 5px;
 	color: #fff;
 	border: none;
 	text-transform: uppercase;
 	display: block;
 	cursor: pointer;
-	margin-top: 120px;
-	width: 70%;
+	margin: 20px auto;
+	width: 50%;
+    font-size: 16px;
 }
 
 .menu {
@@ -122,13 +124,22 @@
 	background-color: #fff;
 }
 
+
+/* desktop styles 450px+ */
 @media screen and (min-width: 450px) {
-    .hero {
-		height: 75vh;
-	}
+    .hero::before {
+        background-image: url("../assets/mini-hero.jpg");
+    }
+
+    .hero-content {
+        width: 50%;
+        top: 40px;
+        left: 40px;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
 
 	.hero-title {
-		font-family: "Roboto Slab", serif;
 		font-size: 2rem;
 		font-weight: 200;
 	}
@@ -139,7 +150,8 @@
 	}
 
 	.hero-cta {
+        padding: 10px 20px;
 		width: 40%;
-		margin-top: 0px;
+        margin: 20px 0;
 	}
 }
