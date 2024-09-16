@@ -1,0 +1,36 @@
+:root {
+	--main-color: #0088ca;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+	width: 100vw;
+	min-height: 100vh;
+	font-family: "Roboto Flex", sans-serif;
+	/* background-image: linear-gradient(to bottom, #b0afaf, #f6eaea, #fff); */
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+section {
+	margin-bottom: 3rem;
+}
+
+main {
+	max-width: 449px;
+	margin: 0 auto;
+}
+
+.orange {
+	color: var(--main-color);
+	font-weight: 400;
+}
