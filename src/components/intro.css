@@ -28,7 +28,7 @@
 
 .introduction-title {
     /* margin bottom !! */
-    margin-bottom: 50%;
+    margin-bottom: 55%;
 	color: #ffffff;
 	text-shadow: 0 10px 10px #000;
 	font-weight: 500;
@@ -53,9 +53,10 @@
 
 .description {
 	font-weight: 300;
-    line-height: 1.2;
+    line-height: 1.4;
     text-indent: 16px;
-    margin: 0 15px;
+    margin: 0 20px;
+    color: var(--main-color);
 }
 
 /* intro desktop */

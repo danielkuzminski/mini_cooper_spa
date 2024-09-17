@@ -14,8 +14,8 @@ export default function Intro() {
 				</p>
 				<p className="description">
 					Crafted with precision engineering and infused with decades of
-					innovation, the Mini Cooper is more than just a car; it's a lifestyle
-					statement, an embodiment of freedom on the road.
+					innovation, the Mini Cooper is more than just a car... It's a <span className="orange">lifestyle
+					statement</span>, an embodiment of freedom on the road.
 				</p>
 			</div>
 		</section>
