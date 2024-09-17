@@ -9,8 +9,14 @@
 	box-sizing: border-box;
 }
 
+html {
+	max-width: 100%;
+}
+
 body {
+	max-width: 100%;
 	overflow-x: hidden;
+	overflow-y: overlay;
 	width: 100vw;
 	min-height: 100vh;
 	font-family: "Roboto Flex", sans-serif;
@@ -25,12 +31,9 @@ section {
 	margin-bottom: 3rem;
 }
 
-main {
-	max-width: 449px;
-	margin: 0 auto;
-}
 
-/* .orange {
-	color: var(--main-color);
+
+.orange {
+	color: var(--secondary-color);
 	font-weight: 400;
-} */
+}

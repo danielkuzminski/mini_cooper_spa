@@ -1,0 +1,166 @@
+/* mobile first */
+.introduction {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+}
+
+.side-a {
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	position: relative;
+}
+
+.side-a::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
+	background-image: url("../assets/mini-hero.jpg");
+	background-position: center;
+	background-size: cover;
+	filter: grayscale();
+	z-index: -2;
+}
+
+.introduction-title {
+    /* margin bottom !! */
+    margin-bottom: 50%;
+	color: #ffffff;
+	text-shadow: 0 10px 10px #000;
+	font-weight: 500;
+	font-size: 2rem;
+	font-family: "Roboto Slab", serif;
+}
+
+.side-b {
+	position: absolute;
+	width:100%;
+    /* padding added!! */
+    padding: 15px;
+    /* margin-top: 50%; */
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 35px;
+	font-size: 1.2rem;
+}
+
+.description {
+	font-weight: 300;
+    line-height: 1.2;
+    text-indent: 16px;
+    margin: 0 15px;
+}
+
+/* intro desktop */
+
+@media screen and (min-width: 450px) {
+	.introduction {
+		margin-top: 50px;
+		width: 100%;
+		min-height: 50vh;
+		display: flex;
+	}
+
+	.side-a {
+		width: 50%;
+		margin: 10px 10px 10px 30px;
+	}
+
+	.side-a::before {
+		border-radius: 30px;
+        background-image: url("../assets/mini-hero-small.jpg");
+	    height: 100%;
+	}
+
+	.introduction-title {
+        margin-bottom: 0;
+		color: #000;
+		font-weight: 300;
+		font-size: 2.5rem;
+		font-family: "Roboto Slab", serif;
+		text-shadow: none;
+	}
+
+	.side-b {
+		position: static;
+		text-shadow: none;
+		color: #000;
+		width: 50%;
+		margin: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 30px;
+		font-size: 1.2rem;
+	}
+
+	.description {
+		font-weight: 100;
+	}
+
+	.question {
+		margin: 50px auto;
+	}
+}
+
+
+/* .introduction {
+	width: 100%;
+	min-height: 50vh;
+	display: flex;
+} */
+
+/* .side-a {
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	position: relative;
+}
+
+.side-a::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("../assets/mini-hero.jpg");
+	background-position: center;
+	background-size: cover;
+	filter: grayscale();
+	z-index: -2;
+}
+
+.introduction-title {
+	color: #ffffff;
+	text-shadow: 0 10px 10px #000;
+	font-weight: 500;
+	font-size: 2rem;
+	font-family: "Roboto Slab", serif;
+}
+
+.side-b {
+	position: absolute;
+	width: 80%;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	font-size: 1.2rem;
+	color: #ffffff;
+	text-shadow: 0 10px 10px #000;
+}
+
+.description {
+	font-weight: 300;
+} */

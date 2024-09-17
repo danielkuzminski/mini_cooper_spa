@@ -8,7 +8,7 @@
 	position: relative;
 	transition: 1s;
 	overflow: hidden;
-	margin-bottom: 5px;
+	margin-bottom: 0px;
 }
 
 .hero::before {
@@ -140,8 +140,8 @@
     }
 
 	.hero-title {
-		font-size: 2rem;
-		font-weight: 200;
+		font-size: 2.2rem;
+		font-weight: 400;
 	}
 
 	.hero-description {
