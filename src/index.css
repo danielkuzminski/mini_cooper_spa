@@ -1,6 +1,7 @@
 :root {
 	--main-color: #0088ca;
 	--secondary-color: rgba(255, 136, 0, 0.9);
+	--text-color: #777;
 }
 
 * {
@@ -10,6 +11,7 @@
 }
 
 html {
+	font-size: 62.5%;
 	max-width: 100%;
 }
 

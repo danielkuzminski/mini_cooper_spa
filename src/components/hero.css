@@ -78,7 +78,7 @@
 	margin-bottom: 20px;
 	font-weight: 300;
 	text-shadow: 0 2px 5px #000;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	cursor: pointer;
 }
 
@@ -86,8 +86,8 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 4rem;
-	height: 4rem;
+	width: 5.5rem;
+	height: 5.5rem;
 	background-color: var(--main-color);
 	border-bottom-left-radius: 30px;
 	transition: 1s;
@@ -108,8 +108,8 @@
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
-	width: 2rem;
-	height: 2rem;
+	width: 3rem;
+	height: 3rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -120,7 +120,7 @@
 .bar {
 	display: block;
 	width: 90%;
-	height: 2px;
+	height: .2rem;
 	background-color: #fff;
 }
 
@@ -140,12 +140,12 @@
     }
 
 	.hero-title {
-		font-size: 2.2rem;
+		font-size: 3.5rem;
 		font-weight: 400;
 	}
 
 	.hero-description {
-		font-size: 1.5rem;
+		font-size: 2rem;
 		font-weight: 100;
 	}
 
